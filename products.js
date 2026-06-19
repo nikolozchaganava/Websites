@@ -17,7 +17,7 @@ const productData = [
         id: 1,
         name: "ოთხეული #1 (2 ტახტი(თეთრი და კრემისფერი) + 2 სავარძელი(ყავისფერი))",
         description: "საუკეთესო არჩევანი. მოყვება 2 სავარძელი და 2 ტახტი. დაშლა შესაძლებელია",
-        price: 2000,
+        price: 1999,
         dimensions: "213სმ x 84სმ x 38სმ",
         bundle: true,
         tags: ["ნაკრები", "სავარძელი/სკამი", "ტახტი", "მეორადი"],
@@ -29,7 +29,7 @@ const productData = [
         id: 2,
         name: "ოთხეული #2 (2 ტახტი(თეთრი და ლურჯი) + 2 სავარძელი(ყავისფერი))",
         description: "საუკეთესო არჩევანი. მოყვება 2 სავარძელი და 2 ტახტი. დაშლა შესაძლებელია",
-        price: 1500,
+        price: 1499,
         dimensions: "220სმ x 90სმ x 40სმ",
         bundle: true,
         tags: ["ნაკრები", "სავარძელი/სკამი", "ტახტი", "მეორადი"],
@@ -41,7 +41,7 @@ const productData = [
         id: 3,
         name: "ოთხეული #3",
         description: "მდგომარეობა ახალი. უმაღლესი ხარისხის გადახარშულ ტყავზე. მოყვება 2 სავარძელი და 2 ტახტი. დაშლა შესაძლებელია",
-        price: 4000,
+        price: 3999,
         dimensions: "220სმ x 95სმ x 43სმ",
         bundle: true,
         tags: ["ნაკრები", "სავარძელი/სკამი", "ტახტი", "ახალი"],
@@ -53,7 +53,7 @@ const productData = [
         id: 4,
         name: "სამეული #1",
         description: "დივნის საზურგე გადადის უკან. მოყვება 2 სავარძელი და 2 ტახტი. დაშლა შესაძლებელია",
-        price: 2000,
+        price: 1999,
         dimensions: "220სმ x 100სმ x 40სმ",
         bundle: true,
         tags: ["ნაკრები", "სავარძელი/სკამი", "ტახტი", "ახალი"],
@@ -65,7 +65,7 @@ const productData = [
         id: 5,
         name: "ოთხეული #4",
         description: "სახწლურები და საზურგე მოძრავი. მოყვება 2 სავარძელი და 2 ტახტი. დაშლა შესაძლებელია",
-        price: 4000,
+        price: 3999,
         dimensions: "250სმ x 100სმ x 42სმ",
         bundle: true,
         tags: ["ნაკრები", "სავარძელი/სკამი", "ტახტი", "ახალი"],
@@ -77,19 +77,19 @@ const productData = [
         id: 6,
         name: "ოთხეული #5 (2 ტახტი(თეთრი და შინდისფერი) + 2 სავარძელი(თეთრი)",
         description: "არ აქვს გასაშლელი მექანიზმი. მოყვება 2 სავარძელი და 2 ტახტი. დაშლა შესაძლებელია",
-        price: 1900,
+        price: 1899,
         dimensions: "220სმ x 85სმ x 40სმ",
         bundle: true,
         tags: ["ნაკრები", "სავარძელი/სკამი", "ტახტი", "მეორადი"],
         variants: [],
-        new: true,
+        new: false,
         image: "./images/squad5.png"
     },
     {
         id: 7,
         name: "ტახტი #1",
         description: "არ აქვს გასაშლელი მექანიზმი. დაშლა შესაძლებელია",
-        price: 900,
+        price: 899,
         dimensions: "225სმ x 90სმ x 45სმ",
         bundle: false,
         tags: [ "ტახტი", "მეორადი"],
@@ -101,13 +101,49 @@ const productData = [
         id: 8,
         name: "ტახტი #2",
         description: "იშლება წიგნივით, არ არქვს სათავსო.",
-        price: 800,
+        price: 799,
         dimensions: "220სმ x 87სმ x 43სმ",
         bundle: false,
         tags: ["ტახტი", "მეორადი"],
         variants: [],
         new: false,
         image: "./images/sofa2.png"
+    },
+    {
+        id: 9,
+        name: "ტახტი #3",
+        description: "მდგომარეობა მეორადი, უმაღლესი ხარისხის ნაჭერი და ლატექსის ღრუბლით სახელურები და ზურგი მოძრავ მდგომარეობაში. შესაძლებელია ტახტის ცალკე გაყიდვაც.",
+        price: 1199,
+        dimensions: "220სმ x 90სმ x 42სმ",
+        bundle: false,
+        tags: ["ტახტი", "მეორადი"],
+        variants: [],
+        new: false,
+        image: "./images/sofa3.jpeg"
+    },
+    {
+        id: 10,
+        name: "ტახტი #3",
+        description: "დამზადებულია ხავერდის ნაჭერზე და მყარი კარგი ხარისხის ლატექსის ღრუბელზე.",
+        price: 1999,
+        dimensions: "213სმ x 84სმ x 38სმ",
+        bundle: true,
+        tags: ["ნაკრები", "ტახტი", "სავარძელი/სკამი", "მეორადი"],
+        variants: [],
+        new: false,
+        image: "./images/squad6.png"
+    },
+    {
+        id: 10,
+        name: "სამული #2",
+        description: "დამზადებულია ხავერდის ნაჭერზე და მყარი კარგი ხარისხის ლატექსის ღრუბელზე.",
+        price: 999,
+        dimensions: "213სმ x 84სმ x 38სმ",
+        bundle: true,
+        tags: ["ნაკრები", "ტახტი", "სავარძელი/სკამი", "მეორადი"],
+        variants: [],
+        new: false,
+        image: "./images/duo1.png"
     }
 ]
 
@@ -134,7 +170,7 @@ function displayProducts(products) {
           <h3 class="font-bold text-base text-slate-800 mb-1 font-georgian group-hover:text-orange-500 transition-colors line-clamp-2 min-h-[3rem]">
             ${product.name}
           </h3>
-          <p class="text-xl font-black text-orange-500 mb-2"><span class="text-slate-900"><s class="text-lg">₾${product.price+200} </s></span>₾${product.price}</p>
+          <p class="text-xl font-black text-orange-500 mb-2"><span class="text-slate-900"><s class="text-lg">₾${(parseFloat(product.price * 1.15)).toFixed(0)} </s></span>₾${product.price}</p>
           <p class="text-xs text-slate-400 font-sans mb-3 flex items-center gap-1">
             📏 ზომა: <span class="font-semibold text-slate-500">${product.dimensions}</span>
           </p>
