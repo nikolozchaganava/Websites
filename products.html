@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ჩვენი პროდუქტები - Turkish Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              georgian: ['"Noto Serif Georgian"', 'serif'],
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased font-sans">
+    
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-800">
+          TURKISH<span class="text-orange-500"> FURNITURE</span>
+        </a>
+        <button id="menu-btn" class="sm:hidden text-slate-700 p-2 hover:bg-gray-100 rounded-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <nav class="hidden sm:block">
+          <ul class="flex space-x-8 font-semibold text-slate-700">
+            <li><a href="index.html#home" class="hover:text-orange-500 transition-colors">მთავარი</a></li>
+            <li><a href="products.html" class="text-orange-500">პროდუქტები</a></li>
+            <li><a href="index.html#contact" class="hover:text-orange-500 transition-colors">კონტაქტი</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav id="mobile-menu" class="hidden sm:hidden bg-white border-t border-gray-100 shadow-inner">
+        <ul class="flex flex-col space-y-1 p-4 font-semibold text-slate-700">
+          <li><a href="index.html#home" class="block py-2 px-3 rounded-md hover:bg-orange-50">მთავარი</a></li>
+          <li><a href="products.html" class="block py-2 px-3 rounded-md bg-orange-50 text-orange-500">პროდუქტები</a></li>
+          <li><a href="index.html#contact" class="block py-2 px-3 rounded-md hover:bg-orange-50">კონტაქტი</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-4 py-12 sm:py-16">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-800 font-georgian">სრული კატალოგი</h1>
+        <div class="w-16 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3 mb-12 font-georgian font-semibold">
+        <button data-filter="ყველა" class="filter-btn bg-orange-500 text-white px-5 py-2 rounded-full shadow-sm cursor-pointer">ყველა</button>
+        <button data-filter="ნაკრები" class="filter-btn bg-white text-slate-700 hover:bg-gray-100 px-5 py-2 rounded-full border border-gray-200 shadow-sm cursor-pointer">ნაკრებები</button>
+        <button data-filter="ტახტი" class="filter-btn bg-white text-slate-700 hover:bg-gray-100 px-5 py-2 rounded-full border border-gray-200 shadow-sm cursor-pointer">ტახტები</button>
+        <button data-filter="ახალი" class="filter-btn bg-white text-slate-700 hover:bg-gray-100 px-5 py-2 rounded-full border border-gray-200 shadow-sm cursor-pointer">ახალი</button>
+        <button data-filter="მეორადი" class="filter-btn bg-white text-slate-700 hover:bg-gray-100 px-5 py-2 rounded-full border border-gray-200 shadow-sm cursor-pointer">მეორადი</button>
+      </div>
+
+      <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-sm border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="font-medium">© 2026 TURKISH FURNITURE. ყველა უფლება დაცულია.</p>
+      </div>
+    </footer>
+
+    <script src="products.js"></script>
+  </body>
+</html>
