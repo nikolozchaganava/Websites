@@ -124,7 +124,7 @@ function displayProducts(products) {
       : '';
 
     const productHTML = `
-      <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 border border-gray-100/80 flex flex-col h-full relative">
+      <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 border border-gray-100/80 flex flex-col h-full relative hover:h-[105%]">
         ${newBadge}
         ${bundleBadge}
         <div class="overflow-hidden h-52 bg-gray-100 relative">
